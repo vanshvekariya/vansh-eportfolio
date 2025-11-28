@@ -93,7 +93,7 @@ const Navbar = ({ activeSection }) => {
             {/* Desktop CTA */}
             <div className="hidden lg:flex items-center gap-4">
               <motion.a
-                href="/resume.pdf"
+                href="./resume.pdf"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex items-center gap-2 px-5 py-2.5 rounded-full bg-gradient-to-r from-primary-500 to-purple-600 text-white text-sm font-medium shadow-lg shadow-primary-500/25 hover:shadow-primary-500/40 transition-shadow"
@@ -163,7 +163,7 @@ const Navbar = ({ activeSection }) => {
                 ))}
                 
                 <motion.a
-                  href="/resume.pdf"
+                  href="./resume.pdf"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="mt-4 flex items-center justify-center gap-2 px-4 py-3 rounded-xl bg-gradient-to-r from-primary-500 to-purple-600 text-white font-medium"

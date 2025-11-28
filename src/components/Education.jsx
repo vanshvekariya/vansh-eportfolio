@@ -29,7 +29,7 @@ const education = [
     location: "Rajkot, Gujarat, India",
     period: "2020 - 2024",
     status: "completed",
-    grade: "8.94 CGPA",
+    grade: "8.94 / 10 CGPA",
     description: "Comprehensive education in computer science fundamentals, software development, and engineering principles.",
     highlights: [
       "Data Structures & Algorithms",

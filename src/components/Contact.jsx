@@ -169,11 +169,24 @@ const Contact = () => {
               >
                 <div className="p-4 rounded-xl glass border border-dark-700/50">
                   <div className="flex items-center gap-4 mb-3">
-                    <div className="w-12 h-12 rounded-lg bg-gradient-to-br from-primary-500 to-cyan-500 flex items-center justify-center">
-                      {isEmailRevealed ? <Unlock size={22} className="text-white" /> : <Lock size={22} className="text-white" />}
+                    <div className="relative w-12 h-12 rounded-lg bg-gradient-to-br from-primary-500 to-cyan-500 flex items-center justify-center">
+                      <Mail size={22} className="text-white" />
+                      {!isEmailRevealed && (
+                        <div className="absolute -top-1 -right-1 w-5 h-5 rounded-full bg-yellow-500 flex items-center justify-center">
+                          <Lock size={12} className="text-dark-900" />
+                        </div>
+                      )}
                     </div>
                     <div className="flex-1">
-                      <p className="text-sm text-dark-400">Email</p>
+                      <p className="text-sm text-dark-400 flex items-center gap-2">
+                        Email
+                        {!isEmailRevealed && (
+                          <span className="text-xs text-yellow-500 flex items-center gap-1">
+                            <Lock size={10} />
+                            Locked
+                          </span>
+                        )}
+                      </p>
                       {isEmailRevealed ? (
                         <a
                           href="mailto:vekariyavansh@gmail.com"
